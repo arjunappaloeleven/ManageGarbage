@@ -1,0 +1,203 @@
+/* Add these styles to your existing styles.css file */
+
+
+/* Reset some default styles */
+/* Reset some default styles */
+/* Reset some default styles */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-beautiful-hand-painted-green-garbage-collection-illustration-background-image_945238.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  
+  .app {
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+  
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex; /* Use flexbox to center content vertically and horizontally */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding as needed */
+  }
+  
+  .garbage-list,
+  .recycle-bin {
+    width: 100%; /* Full width of the parent container */
+    max-width: 800px; /* Adjust as needed */
+    background-image: url(""); /* Replace with your inner image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px; /* Add some padding to separate the content from the background */
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin to separate the sections */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional box shadow for sections */
+  }
+  
+  /* ... Rest of your CSS styles ... */
+  
+  
+  /* ... Rest of your CSS styles ... */
+  
+  .garbage-list h2,
+  .recycle-bin h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures equal spacing between items */
+  }
+  
+  .garbage-item,
+  .recycle-item {
+    flex-basis: calc(33.33% - 10px); /* Adjusted to allow for spacing */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .garbage-item img,
+  .recycle-item img {
+    max-width: 100%;
+    max-height: 100px; /* Limit image height to maintain uniformity */
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .add-custom-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-custom-item input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .clear-button {
+    background-color: #e74c3c;
+    margin-top: 10px;
+  }
+  
+  .clear-button:hover {
+    background-color: #c0392b;
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .garbage-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #4caf50; /* Green color */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Animation for moving items to the recycle bin */
+  .items .recycle-item {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .items .recycle-item.moved {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Animation for clearing recycle bin */
+  .clear-button:hover {
+    background-color: #ff3333; /* Red color */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .items .recycle-item.moved {
+    transform: translateX(-100%) rotate(360deg);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  button, .clear-button {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover, .clear-button:hover {
+    background-color: #4caf50; /* Green color */
+  }
+  .garbage-item:hover h3 {
+    color: #ff5722; /* Orange color */
+    transition: color 0.3s ease-in-out;
+  }
+  button {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .app {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

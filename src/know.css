@@ -1,0 +1,89 @@
+/* Tab buttons container */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Tab button style */
+  .tab-button {
+    background-color: #33cc33;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Active tab button style */
+  .tab-button.active {
+    background-color: #9183d2;
+  }
+  
+  /* Content container */
+  .content {
+    background-image: url('https://static.zawya.com/view/acePublic/alias/contentid/image.201110050309LUTW/3/201110050309lutw-jpg.webp');
+    background-size: cover;
+    padding: 20px;
+    border: 1px solid #6bb2d3;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading style */
+  h3 {
+    font-size: 24px;
+    color: #456fb6;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph style */
+  p {
+    font-size: 16px;
+    color: #253a3c;
+    line-height: 1.5;
+  }
+  
+  /* List item style */
+  ul {
+    list-style-type: square;
+    line-height: 1.8;
+    color: #fff;
+  }
+  
+  /* Link style */
+  a {
+    color: #22272c;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Colored text styles */
+  span.color-purple {
+    color: rgb(200, 135, 74);
+  }
+  
+  span.color-red {
+    color: #ff5733;
+  }
+  
+  span.color-green {
+    color: #33ff57;
+  }
+  
+  span.color-blue {
+    color: #5733ff;
+  }
+  
+  span.color-pink {
+    color: #528009;
+  }
+  
